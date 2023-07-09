@@ -1,0 +1,40 @@
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">categorie 1</a></li>
+            <li><a href="#">categorie 2</a></li>
+            <li><a href="#">categorie 3</a></li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+    header {
+        background-color: #000;
+        color: #fff;
+        padding: 20px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: cender;
+    }
+
+    nav li {
+        margin: 0 10px;
+
+    }
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #999;
+    }
+</style>
