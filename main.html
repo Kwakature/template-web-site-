@@ -1,40 +1,68 @@
 <header>
     <nav>
-        <ul>
-            <li><a href="#">categorie 1</a></li>
-            <li><a href="#">categorie 2</a></li>
-            <li><a href="#">categorie 3</a></li>
-        </ul>
+      <ul>
+        <li class="category">
+          <a href="#">Catégorie 1</a>
+          <div class="dropdown">
+            Contenu de la catégorie 1
+          </div>
+        </li>
+        <li class="category">
+          <a href="#">Catégorie 2</a>
+          <div class="dropdown">
+            Contenu de la catégorie 2
+          </div>
+        </li>
+        <li class="category">
+          <a href="#">Catégorie 3</a>
+          <div class="dropdown">
+            Contenu de la catégorie 3
+          </div>
+        </li>
+      </ul>
     </nav>
-</header>
-
+  </header>
+  
 <style>
-    header {
-        background-color: #000;
-        color: #fff;
-        padding: 20px;
-    }
-
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: cender;
-    }
-
-    nav li {
-        margin: 0 10px;
-
-    }
-    nav a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 16px;
-        font-weight: bold;
-    }
-
-    nav a:hover {
-        color: #999;
-    }
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    width: 200px;
+    z-index: 1;
+  }
+  
+  .category:hover .dropdown {
+    display: block;
+  }
 </style>
